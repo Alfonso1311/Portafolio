@@ -6,97 +6,333 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/Index.css">
     <script src="https://kit.fontawesome.com/2bd37f87ea.js" crossorigin="anonymous"></script>
-    <title>Inicio</title>
+
+    <link rel="stylesheet" href="../CSS/lightslider.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="../JS/JQuery.js"></script>
+    <script src="../JS/lightslider.js"></script>
+
+    <link rel="icon" href="../IMG/Logo.png">
+    <title>Home</title>
 </head>
 <body>
-    <section class="container_home">
-        <div class="fontopacity">
-            <header id="header">
-                    <div class="container_header">
-                        <div class="logo">
-                            <img src="../IMG/Logo3.png" alt="">
-                        </div>  
-                        <div class="container_nav">
-                            <nav id="nav">
-                                <ul>
-                                    <li><a href="#" class="select">Home</a></li>
-                                    <li><a href="#">Projects</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </nav>
+    <div class="contenedor">
+        <section class="container_home" id="Home">
+            <div class="fontopacity">
+                <header>
+                        <div class="container_header">
+                            <div class="logo">
+                                <img src="../IMG/Logo.png" alt="">
+                            </div>  
+                            <div class="container_nav">
+                                <nav class="nav" id="nav">
+                                    <ul id="enlaces">
+                                        <li><a href="#Home" class="selected">Home</a></li>
+                                        <li><a href="#About-Me">About me</a></li>
+                                        <li><a href="#Projects">Projects</a></li>
+                                        <li><a href="#footer">Contact</a></li>
+                                    </ul>
+                                </nav>
 
-                            <div class="btn_menu" id="btn_menu"><i class="fas fa-bars"></i></div>
+                                <div class="btn_menu" id="btn_menu"><i class="fas fa-bars"></i></div>
+                            </div>
+                        </div>
+                </header>
+                
+                <div class="container_all" id="container_all">
+                    <div class="cover">
+                        <div class="container_cover">
+                            <div class="container_info">
+                                <h2><span class="typed"></span></h2>
+
+                                <div class="titulo" id="cadenas-texto">
+                                    <p><span class="text_n">Alfonso Díaz</span></br><i class="text_typed">Web Design</i></p>
+                                    <p><span class="text_n">Alfonso Díaz</span></br><i class="text_typed">Web Development</i></p>
+                                </div>
+                                <p>Specialized in the development of customized web pages that adapt to your type of business and personal brand. Contact me here</p>
+                                <div class="buttons">
+                                    <div class="button-contact">
+                                        <button class="contact">
+                                            <div class="i-wrapper-1">
+                                                <div class="i-wrapper">
+                                                    <i class="fas fa-solid fa-envelope"></i>
+                                                </div>
+                                            </div>
+                                            <span>Contact</span>
+                                        </button>
+                                    </div>
+                                    <div class="button-cv">
+                                        <button class="cv">
+                                            <div class="i-wrapper-1">
+                                                <div class="i-wrapper">
+                                                    <div class="download"><i class="fas fa-solid fa-download"></i></div>
+                                                </div>
+                                            </div>
+                                            <span>CV Download</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="containerVectorBorde"></div>
+                            <div class="container_vector">
+                                <img src="../IMG/FP.png" alt="">
+                            </div>
                         </div>
                     </div>
-            </header>
+                </div>
+
+                <div class="wave"></div>
+            </div>
+        </section>
+
+        <section class="container_aboutme" id="About-Me">
+            <div class="text_aboutme encabezado">
+                <h2>About Me</h2>
+                <hr>
+            </div> 
             
-            <div class="container_all" id="container_all">
-                <div class="cover">
-                    <div class="container_cover">
-                        <div class="container_info">
-                            <h1>Hello. <span>I'm</span></h1>
-                            <h2>Alfonso Diaz</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum similique maxime eius, praesentium maiores aspernatur in aperiam dolore corrupti odit omnis cumque perferendis fuga magni et officiis laborum accusamus saepe!</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, corrupti? Nihil ipsam mollitia ad id nostrum deserunt vel ducimus soluta quibusdam! Maiores culpa, magnam cupiditate vitae quaerat eum harum dignissimos!</p>
-                            <button type="reset" class="contact">Contacto</button>
+            <div class="container_tecnologias">
+                <h1 class="encabezado">Skills</h1>
+                <div class="tecnologia">
+                    <div class="tec">
+                        <span>HTML</span>
+                        <div class="circle_img1"><img src="../IMG/html-1.svg" alt=""></div>
+                    </div>
+                    <div class="name_porcen">
+                        <span>HTML</span>
+                        <div class="grade"><div class="porcent"></div></div>
+                    </div>
+                    <h1>100%</h1>
+                </div>
+                <div class="tecnologia">
+                    <div class="tec">
+                        <span>CSS</span>
+                        <div class="circle_img2"><img src="../IMG/css-3.svg" alt=""></div>
+                    </div>
+                    <div class="grade"><div class="porcent"></div></div>
+                    <h1>100%</h1>
+                </div>
+                <div class="tecnologia">
+                    <div class="tec">
+                        <span>JAVASCRIPT</span>
+                        <div class="circle_img3"><img src="../IMG/javascript-1.svg" alt=""></div>
+                    </div>
+                    <div class="grade"><div class="porcent"></div></div>
+                    <h1>100%</h1>
+                </div>
+                <div class="tecnologia">
+                    <div class="tec">
+                        <span>Lenguaje C</span>
+                        <div class="circle_img4"><img src="../IMG/c-1.svg" alt=""></div>
+                    </div>
+                    <div class="grade"><div class="porcent"></div></div>
+                    <h1>100%</h1>
+                </div>
+            </div>      
+        </section>
+        
+        <section class="container_projects" id="Projects">
+            <div class="text_project encabezado">
+                <h2 class="encabezado">Projects</h2>
+                <hr>
+            </div>        
+            <ul id="autoWidth" class="cs-hidden">
+                <!-- ******************************************************   SLIDE #1  ******************************************* -->
+                <li class="item-a">
+                    <div class="box_slide">
+                        <div class="slide_img1">
+                            <img src="../IMG/mockup.png" alt="">
+                            <div class="overlay">
+                                <a href="#" class="buy-btn">See Poject</a>
+                            </div>
                         </div>
-                        <div class="container_vector">
-                            <img src="../IMG/FP.png" alt="">
+                        <div class="detail_box">
+                            <div class="type">
+                                <a href="#">HTML</a>
+                                <span>Alfonso Diaz</span>
+                            </div>
+                            <a href="#" class="price">$$</a>
                         </div>
                     </div>
-                </div>
+                </li>
+                <!-- ******************************************************   SLIDE #2  ******************************************* -->
+                <li class="item-b">
+                    <div class="box_slide">
+                        <div class="slide_img1">
+                            <img src="../IMG/mockup.png" alt="">
+                            <div class="overlay">
+                                <a href="#" class="buy-btn">See Project</a>
+                            </div>
+                        </div>
+                        <div class="detail_box">
+                            <div class="type">
+                                <a href="#">CSS</a>
+                                <span>Alfonso Diaz</span>
+                            </div>
+                            <a href="#" class="price">$$</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- ******************************************************   SLIDE #3  ******************************************* -->
+                <li class="item-c">
+                    <div class="box_slide">
+                        <div class="slide_img1">
+                            <img src="../IMG/mockup.png" alt="">
+                            <div class="overlay">
+                                <a href="#" class="buy-btn">See Project</a>
+                            </div>
+                        </div>
+                        <div class="detail_box">
+                            <div class="type">
+                                <a href="#">JAVASCRIPT</a>
+                                <span>Alfonso Diaz</span>
+                            </div>
+                            <a href="#" class="price">$$</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- ******************************************************   SLIDE #4  ******************************************* -->
+                <li class="item-d">
+                    <div class="box_slide">
+                        <div class="slide_img1">
+                            <img src="../IMG/mockup.png" alt="">
+                            <div class="overlay">
+                                <a href="#" class="buy-btn">See Project</a>
+                            </div>
+                        </div>
+                        <div class="detail_box">
+                            <div class="type">
+                                <a href="#">JQUERY</a>
+                                <span>Alfonso Diaz</span>
+                            </div>
+                            <a href="#" class="price">$$</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- ******************************************************   SLIDE #5  ******************************************* -->
+                <li class="item-e">
+                    <div class="box_slide">
+                        <div class="slide_img1">
+                            <img src="../IMG/mockup.png" alt="">
+                            <div class="overlay">
+                                <a href="#" class="buy-btn">See Project</a>
+                            </div>
+                        </div>
+                        <div class="detail_box">
+                            <div class="type">
+                                <a href="#">C</a>
+                                <span>Alfonso Diaz</span>
+                            </div>
+                            <a href="#" class="price">$$</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- ******************************************************   SLIDE #6  ******************************************* -->
+                <li class="item-f">
+                    <div class="box_slide">
+                        <div class="slide_img1">
+                            <img src="../IMG/mockup.png" alt="">
+                            <div class="overlay">
+                                <a href="#" class="buy-btn">See Project</a>
+                            </div>
+                        </div>
+                        <div class="detail_box">
+                            <div class="type">
+                                <a href="#">PHP</a>
+                                <span>Alfonso Diaz</span>
+                            </div>
+                            <a href="#" class="price">$$</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- ******************************************************   SLIDE #7  ******************************************* -->
+                <li class="item-g">
+                    <div class="box_slide">
+                        <div class="slide_img1">
+                            <img src="../IMG/mockup.png" alt="">
+                            <div class="overlay">
+                                <a href="#" class="buy-btn">See Project</a>
+                            </div>
+                        </div>
+                        <div class="detail_box">
+                            <div class="type">
+                                <a href="#">PHYTON</a>
+                                <span>Alfonso Diaz</span>
+                            </div>
+                            <a href="#" class="price">$$</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- ******************************************************   SLIDE #8  ******************************************* -->
+                <li class="item-h">
+                    <div class="box_slide">
+                        <div class="slide_img1">
+                            <img src="../IMG/mockup.png" alt="">
+                            <div class="overlay">
+                                <a href="#" class="buy-btn">See Project</a>
+                            </div>
+                        </div>
+                        <div class="detail_box">
+                            <div class="type">
+                                <a href="#">VUE JS</a>
+                                <span>Alfonso Diaz</span>
+                            </div>
+                            <a href="#" class="price">$$</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="container_contact " id="Contact">
+            <div class="text_contact encabezado">
+                <h1>Contact</h1>
             </div>
 
-            <div class="wave"></div>
+        </section>
+
+    </div>
+    <footer id="footer">
+        <div class="container_footer">
+                <div class="box_footer">
+                    <div class="logo">
+                        <img src="../IMG/Logo3.png" alt="">
+                    </div>
+                    <div class="terms">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magnam aspernatur earum? Necessitatibus, quo nostrum esse harum adipisci aperiam vitae voluptas. Exercitationem voluptatum nam ducimus vel debitis necessitatibus molestias nostrum.</p>
+                    </div>
+                </div>
+                <div class="box_footer">
+                    <h2>Soluciones</h2>
+                    <a href="#">App Desarrollo</a>
+                    <a href="#">App Marketing</a>
+                    <a href="#">IOS Desarrollo</a>
+                    <a href="#">Android Desarrollo</a>
+                </div>
+                <div class="box_footer">
+                    <h2>Compañia</h2>
+                    <a href="#">Acerca de</a>
+                    <a href="#">Trabajos</a>
+                    <a href="#">Procesos</a>
+                    <a href="#">Servicio</a>
+                </div>
+                <div class="box_footer">
+                    <h2>Redes Sociales</h2>
+                    <a href="#"><i class="fab fa-facebook-square"></i> Facebook</a>
+                    <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                    <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+                </div>
         </div>
-    </section>
+        <div class="box_copyright">
+                <hr>
+                <p>Todos los derechos reservados © 2022
+                    <b>Alfonso Diaz</b>
+                </p>
+        </div>
+    </footer>
+    <script src="../JS/NavScrpt.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="../JS/typed.js"></script>
     
-   <section class="container_projects" id="container_projects">
-    
-   </section>
-   <section class="contact" id="container_contact">
-
-   </section>
-   <footer id="footer">
-       <div class="container_footer">
-            <div class="box_footer">
-                <div class="logo">
-                    <img src="../IMG/Logo3.png" alt="">
-                </div>
-                <div class="terms">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magnam aspernatur earum? Necessitatibus, quo nostrum esse harum adipisci aperiam vitae voluptas. Exercitationem voluptatum nam ducimus vel debitis necessitatibus molestias nostrum.</p>
-                </div>
-            </div>
-            <div class="box_footer">
-                <h2>Soluciones</h2>
-                <a href="#">App Desarrollo</a>
-                <a href="#">App Marketing</a>
-                <a href="#">IOS Desarrollo</a>
-                <a href="#">Android Desarrollo</a>
-            </div>
-            <div class="box_footer">
-                <h2>Compañia</h2>
-                <a href="#">Acerca de</a>
-                <a href="#">Trabajos</a>
-                <a href="#">Procesos</a>
-                <a href="#">Servicio</a>
-            </div>
-            <div class="box_footer">
-                <h2>Redes Sociales</h2>
-                <a href="#"><i class="fab fa-facebook-square"></i> Facebook</a>
-                <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
-                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
-                <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
-            </div>
-       </div>
-       <div class="box_copyright">
-            <hr>
-            <p>Todos los derechos reservados © 2022
-                <b>Alfonso Diaz</b>
-            </p>
-       </div>
-   </footer>
-
-<script src="../JS/NavScrpt.js"></script>
 </body>
 </html>
