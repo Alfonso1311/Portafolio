@@ -18,6 +18,7 @@ html{
     ---Secundario: #feba0b;
     ---terciario: white;
     ---cuarto: rgb(68, 68, 68);
+    ---quinto: #000000;
     ---font: 'Poppins', sans-serif;
     ---font2: 'Roboto Mono', monospace;
 }
@@ -25,6 +26,7 @@ html{
 body{
     background-color: #ffffff;
 }
+
 
 /*****  SCROLLBAR   *****/
 
@@ -57,6 +59,16 @@ body{
     background-position: bottom;
     width: 100%;
     background-attachment: fixed;
+}
+
+.fontopacity::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, transparent, var(---quinto));
+    z-index: 1000;
 }
 
 .fontopacity{
@@ -120,6 +132,7 @@ nav{
     height: 100%;
 }
 
+
 nav ul{
     height: 100%;
     display: flex;
@@ -134,6 +147,13 @@ nav ul li{
 nav ul li a{
     color: var(---terciario);
     font-size: 14px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: var(---Secundario);
+    font-size: 14px;
+    text-decoration: none;
 }
 
 .nav .selected{
@@ -203,9 +223,10 @@ nav ul li a{
 .cover .container_info a{
     position: absolute;
     color: #fff;
-    margin-top: 46px;
+    margin-top: 61px;
     margin-left: 124px;
     border-bottom: 2px solid var(---Secundario);
+    text-decoration: none;
 }
 
 .text_typed{
@@ -242,6 +263,7 @@ nav ul li a{
 .buttons{
     display: flex;
     padding-top: 0px;
+    margin-bottom: 200px;
 }
 
 .button-contact{
@@ -361,7 +383,7 @@ nav ul li a{
     margin-top: 0px;
 }
 */
-
+/*
 .wwhite{
     margin-top: -40px;
 }
@@ -369,7 +391,7 @@ nav ul li a{
 .wblack{
     margin-top: -250px;
 }
-
+*/
 /*ABOUT ME*/
 
 .container_aboutme{
@@ -999,7 +1021,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
     margin-top: 100px;
 }
@@ -1037,6 +1059,7 @@ footer{
     color: #7a7a7a;
     font-weight: 600;
     font-family: var(---font);
+    text-decoration: none;
 }
 
 .box_footer a:hover{

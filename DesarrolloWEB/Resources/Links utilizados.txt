@@ -1,0 +1,23 @@
+Inspiración Portafolio Jack:
+	https://jacekjeznach.com/
+
+Animation CSS Generator: 
+	https://webcode.tools/generators/css/keyframe-animation
+
+W3 School CSS Tooltip:
+	https://www.w3schools.com/css/css_tooltip.asp
+
+Fontawesome Icons:
+	https://fontawesome.com/icons
+
+Google Fonts Fuentes:
+	https://fonts.google.com/?preview.size=88
+
+Blog sobre Blast Animation with Javascript
+	https://programacionx.net/programacion/javascript/blast-texto-animado-javascript/
+
+Ejemplo con Blast Pagina home
+	https://codepen.io/gmawji/pen/yorxKR
+
+Animaciones de inicio y remover despues
+	https://animate.style/
