@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
     <!--<link rel="stylesheet" href="../CSS/lightslider.css">-->
@@ -23,9 +22,9 @@
                     <li><a href="#Contact">Contact</a></li>
                     <li><a href="#Blog" class="selected">Blog</a></li>
                     <li class="socialMedia">
-                        <a href="#"><i class="fa-brands fa-github github"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook-f facebook"></i></a>
+                        <a href="https://github.com/AlfonsoDiaz09" target="_blank"><i class="fa-brands fa-github github"></i></a>
+                        <a href="https://www.linkedin.com/in/alfonsodiazc09/" target="_blank"><i class="fa-brands fa-linkedin-in linkedin"></i></a>
+                        <a href="https://www.facebook.com/AlfonsoDiazC.09/" target="_blank"><i class="fa-brands fa-facebook-f facebook"></i></a>
                     </li>
                 </ul>
             </nav>
@@ -35,22 +34,6 @@
         <section class="home" id="Home">
             
             <div class="principalText">
-                <!--
-                <div class="txtTyped">
-                    <h2 class="txt"><span class="typed"></span></h2>
-                    <div id="cadenas-texto">
-                        <p>Hi,</p>
-                    </div>
-                    <h2 class="txt2"><span class="typed2"></span></h2>
-                    <div id="cadenas-texto2">
-                        <p>I'm <span class="space"></span>Alfonso</p>
-                    </div>
-                    <h2 class="txt3"><span class="typed3"></span></h2>
-                    <div id="cadenas-texto3">
-                        <p>Web Developer</p>
-                    </div>
-                </div>
-                -->
                 <div class="textHome">
                     <span class="textHtml">&lt;html&gt;</span>
                     <span class="textBody">&lt;body&gt;</span>
@@ -144,9 +127,26 @@
                         </div>
                     </div>
                 </div>
-                <h2 class="encabezado">Front end developer / Front end developer</h2>
+                <h2 class="encabezado">Back end developer / Front end developer</h2>
                 <div class="button-contact">
                     <a href="#Contact" class="button-c"><span>Contact me!</span></a>
+                    <a href="#" class="button-c btn-cv" id="openModal"><span>See CV</span></a>
+                </div>
+            </div>
+
+            <div class="displayNoneCV" id="modalCVContainer">
+                <div class="bluer__cv"></div>
+                <div class="modal__cv">
+                    <div class="modal__cv_header">
+                        <h2 class="modal__cv_title"><span>C</span>urriculum <span>V</span>itae</h2>
+                        <i class="fa-solid fa-circle-xmark" id="closeModal1" style="color: #ff0000;"></i>
+                    </div>
+                    <hr class="hr_cv">
+                    <iframe src="../PDF/CV - Alfonso Díaz Celito - Programador.pdf" frameborder="0"></iframe>
+                    <div class="buttons__cv">
+                        <a href="../PDF/CV - Alfonso Díaz Celito - Programador.pdf" download="CV - Alfonso Díaz Celito - Programador">Descargar CV</a>
+                        <button id="closeModal2">Cancelar</button>
+                    </div>
                 </div>
             </div>
             
@@ -161,6 +161,7 @@
                 </div>
             </div>
         </section>
+
         <section class="project" id="Project">
             <div class="proj">
                 <h1 class="titleWork">Work</h1>
@@ -378,6 +379,7 @@
                 </div>
             </div>
         </section>
+
         <section class="skills" id="Skills">
             
                 <div class="myself">
@@ -436,11 +438,11 @@
                     </div>
                     <div class="containerSkills">
                         <h3 class="describeSkill">
-                            Since Adobe Flash was a complete innovation, alongside with CSS 1.0 and HTML 4.01 as standards of the current web I've been passionate about web. <br>
-                            For over a decade I had many opportunities to work in a vast spectrum of <span><a rel="skills" href="#">web technologies</a></span>
-                            what let me gather a significant amount of various experience.
-                            Working for companies and individuals around the globe I met and learnt from amazing and ambitious people. <br>
-                            I currently work remotely with a selected freelance client base being open for new opportunities.
+                            I am a <span>Full-Stack</span> web developer with about 5 years of experience. I work with personal and academic projects to create high-performing, 
+                            interactive websites that work in most web browsers and on all devices.I had many opportunities to work in a vast spectrum of 
+                            <span>web technologies</span> what let me gather a significant amount of various experience. <br><br>
+                            With a strong emphasis on "Progressive Enhancement", I look for creative ways to exploit the website's front-end code without 
+                            compromising browser performance.
                         </h3>
                         <div class="skillsandLanguage" id="container">
                             <div id="rotate2D">
@@ -476,19 +478,6 @@
                                         </div>
                                 </div>
                             </div>
-                            <!--
-                            <i class="iconsk fa-brands fa-html5 html"></i>
-                            <i class="iconsk fa-brands fa-css3-alt css"></i>
-                            <i class="iconsk fa-brands fa-sass sass"></i>
-                            <i class="iconsk fa-brands fa-js javascript"></i>
-                            <i class="iconsk fa-brands fa-python python"></i>
-                            <i class="iconsk fa-brands fa-bootstrap bootstrap"></i>
-                            <i class="iconsk fa-brands fa-php php"></i>
-                            <i class="iconsk fa-brands fa-wordpress wordpress"></i>
-                            <i class="iconsk fa-brands fa-git-alt git"></i>
-                            <i class="iconsk fa-brands fa-node nodejs"></i>
-                            <i class="iconsk fa-brands fa-react reactjs"></i>
-                            -->
                         </div>
                     </div>
                 </div>
@@ -615,6 +604,7 @@
             </div>
             -->
         </section>
+
         <section class="blogs" id="Blog">
             <h1 class="titleBlog">Blog</h1>
             <div class="contentBlog">
@@ -639,6 +629,7 @@
             </div>
             <div class="articles"><a href="#">See all articles...</a></div>
         </section>
+
         <section class="contact" id="Contact">
             <div class="contactme">
                 <h1 class="titleContact">@</h1>
@@ -707,8 +698,8 @@
                     </div>
                     <div class="maps">
                         <div class="address">
-                            <h1 class="add">Cuernavaca Morelos, Jiutepec</h1>
-                            <h1 class="email"><span>@:</span> alfondc.09@gmail.com</h1>
+                            <h1 class="add">Morelos, México</h1>
+                            <h1 class="email"><span>@:</span> <a href="mailto:alfonsodiazc.09@gmail.com" target="_blank">alfonsodiazc.09@gmail.com</a></h1>
                         </div>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1934577.2419705!2d-100.18433687963984!3d18.732479411083396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cddfae25f6fe47%3A0x975f8225a169dd0f!2sMorelos!5e0!3m2!1ses!2smx!4v1659963662948!5m2!1ses!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
@@ -717,7 +708,7 @@
         </section>
         <footer class="footer">
             <hr class="hrFooter">
-            <p>All rights reserved. Design and development by <span><b>Alfonso Diaz</b></span>. © 2022
+            <p>All rights reserved. Development by <span><b>Alfonso Diaz</b></span>. © 2022
             </p>
         </footer>
     </div>
@@ -731,6 +722,7 @@
     <script src="../JS/ballSkills.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="../JS/animation.js"></script>
+    <script src="../JS/app.js"></script>
     <script src="../JS/animatedHover.js"></script>
     <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
     <!--<script src="main.js"></script>-->

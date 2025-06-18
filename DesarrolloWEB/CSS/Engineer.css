@@ -41,6 +41,7 @@ html{
 body{
     display: flex;
     background-color: var(---Principal);
+    overflow-x: hidden;
 }
 
 .no-seleccionable {
@@ -287,6 +288,10 @@ body{
     color: var(---terciario);
 }
 
+.btn-cv{
+    width: 7.5em;
+}
+
 .button-c:before {
     content: "";
     position: absolute;
@@ -322,6 +327,115 @@ body{
 
 .button-c span{
     letter-spacing: 6px;
+}
+
+.displayNoneCV{
+    display: none;
+}
+
+.displayFlexCV{
+    display: flex;
+}
+
+.bluer__cv{
+    position: fixed;;
+    background-color: #1d1d1d98;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    z-index: 98;
+}
+
+.modal__cv{
+    position: fixed;
+    background-color: var(---Principal); /* Fallback color */
+    font-family: var(---font5);
+    box-shadow: 0px 0px 10px 0px rgba(203, 180, 5, 0.75);
+    color: var(---quinto);
+    left: 0;
+    right: 0;
+    top: 2em;
+    bottom: 2em;
+    font-weight: 300;
+    width: 70%;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    z-index: 99;
+}
+
+.modal__cv_header{
+    display: flex;
+    justify-content: center;
+    padding: 1em 0em;
+}
+
+.modal__cv_title span{
+    font-size: 1.5em;
+    font-family: var(---font5);
+    color: var(---terciario);
+    font-weight: 700;
+    margin-left: 0.5em;
+}
+
+.modal__cv_header i{
+    position: absolute;
+    right: 0;
+    margin-right: 0.5em;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.hr_cv{
+    width: 90%;
+    margin: auto;
+    border: 1px solid var(---terciario);
+    margin-bottom: 1em;
+}
+
+.modal__cv iframe{
+    border: 1px solid #000;
+    width: 90%;
+    height: 60vh;
+    border-radius: 10px;
+}
+
+.buttons__cv{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 20em;
+}
+
+.buttons__cv button, .buttons__cv a{
+    font-size: 0.8em;
+    font-family: var(---font5);
+    color: var(---quinto);
+    font-weight: 300;
+    border: 1px solid var(---terciario);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    background-color: var(---Principal);
+    cursor: pointer;
+}
+
+.buttons__cv :nth-child(1){
+    background-color: var(---terciario);
+}
+
+.buttons__cv :nth-child(1):hover{
+    background-color: #ecba04;
+    border: 1px solid #ecba04;
+}
+
+.buttons__cv :nth-child(2):hover{
+    background-color: var(---terciario);
+    
 }
 
 .scrollBetween{
@@ -568,7 +682,7 @@ body{
 .card:hover>.img {
     width: 100%;
     height: 50%;
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 0 auto;
     background-color: #f0f0f0;
     z-index: 99999;
@@ -624,12 +738,6 @@ body{
     transition: all 0.75s;
     color: white;
 }
-/*
-.container_projects{
-    padding-bottom: 80px;
-    padding-top: 80px;
-}
-*/
 
 @keyframes bounce-1 {
     0%{
@@ -642,6 +750,7 @@ body{
         transform: translateX(0);
     }
 }
+
 
 /**********************************************************************************************/
 /**********************************************************************************************/
@@ -687,7 +796,7 @@ body{
     line-height: 40px;
 }
 
-.describeSkill span a{
+.describeSkill span{
     color: var(---terciario);
 }
 
@@ -703,51 +812,6 @@ body{
     font-size: 5em;
     color: #e08a00a6;
 }
-/*
-.skillsandLanguage .html{
-    color: #e6760e;
-}
-
-.skillsandLanguage .css{
-    color: #1778f2;
-}
-
-.skillsandLanguage .sass{
-    color: #df06c2;
-}
-
-.skillsandLanguage .javascript{
-    color: #e0dc00;
-}
-
-.skillsandLanguage .python{
-    color: #f2e317;
-}
-
-.skillsandLanguage .bootstrap{
-    color: #4006df;
-}
-
-.skillsandLanguage .php{
-    color: #6b06df;
-}
-
-.skillsandLanguage .wordpress{
-    color: #028db7;
-}
-
-.skillsandLanguage .git{
-    color: #fa5d02;
-}
-
-.skillsandLanguage .nodejs{
-    color: #086414;
-}
-
-.skillsandLanguage .reactjs{
-    color: #11ebeb;
-}
-*/
 
 /***************************************************/
 :root{
@@ -769,7 +833,6 @@ body{
     height:44%;
     margin: 28%;
     border-radius: 50%;
-    /*background-color:rgba(245, 19, 19, 0.164);*/
     color:black;
     position:absolute;
     border-radius: 50%;
@@ -869,10 +932,6 @@ body{
     transform: rotateY(188deg)
 }
 
-
-.skillsandLanguage{
-    /*background-color: #086414;*/
-}
 #rotate2D{
     width: var(--edge);
     height: var(--edge);
@@ -894,19 +953,8 @@ body{
         transform:rotateX(360deg);
     }
 }
-/*
-@keyframes css{
-    0%{
-        color: #1778f2;
-    }
-    100% {
-    }
-}
-*/
+
 /******************************************************************************************/
-/**********************************************************************************************/
-/**********************************************************************************************/
-/**********************************************************************************************/
 /**********************************************************************************************/
 
 
@@ -1169,7 +1217,14 @@ textarea:invalid~.barra::before{
 
 .email span{
     color: var(---terciario);
+}
 
+.email a{
+    color: var(---quinto);
+}
+
+.email a:hover{
+    color: var(---terciario);
 }
 
 .footer{
